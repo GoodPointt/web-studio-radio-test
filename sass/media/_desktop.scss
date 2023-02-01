@@ -1,0 +1,117 @@
+/* 1200px + */
+
+@media screen and (min-width: 1200px) {
+	.container {
+		width: 1158px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.section {
+		padding-top: 120px;
+		padding-bottom: 120px;
+	}
+	.contacts-list {
+		display: flex;
+		gap: 40px;
+	}
+	.hero {
+		padding: 188px 0px;
+		height: 600px;
+	}
+	.hero-header {
+		margin-bottom: 55px;
+	}
+
+	.contacts-link {
+		padding-top: 31px;
+		padding-bottom: 31px;
+	}
+	.feature-list {
+		margin-left: -12px;
+		margin-right: -12px;
+	}
+
+	.feature-item {
+		width: calc((100% - 24px * 3) / 4);
+		margin-right: 12px;
+		margin-left: 12px;
+	}
+
+	.feature-item .section-text {
+		padding-bottom: 0;
+	}
+
+	.feature-icon {
+		@include centerFlex();
+
+		// @extend %centeredFlex;
+
+		height: 112px;
+		margin-bottom: 8px;
+
+		border-radius: 4px;
+		background-color: var(--secondary-color);
+	}
+
+	.work-list {
+		display: flex;
+	}
+
+	.work-item {
+		width: calc((100% - 48px) / 3);
+		margin-right: 24px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	.team-list {
+		justify-content: space-between;
+		gap: 24px;
+	}
+
+	.customers-list {
+		display: flex;
+		gap: 24px;
+	}
+
+	.customers-link {
+		width: 168px;
+	}
+
+	.container.footer-flex {
+		display: flex;
+	}
+
+	.footer-right {
+		margin-right: 80px;
+	}
+
+	.footer-right > .social-list {
+		gap: 16px;
+	}
+
+	.footer-left {
+		margin-right: 120px;
+	}
+
+	.card-item {
+		width: calc((100% - 48px) / 3);
+		margin-right: 24px;
+		margin-bottom: 40px;
+		border: 1px solid #e7e9fc;
+		box-shadow: 0px 1px 6px rgb(46 47 66 / 8%);
+
+		&:nth-child(3n) {
+			margin-right: 0px;
+		}
+		&:nth-last-child(-n + 3) {
+			margin-bottom: 0px;
+		}
+	}
+
+	.filter-list {
+		margin-bottom: 72px;
+	}
+}

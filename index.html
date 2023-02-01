@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Web Studio</title>
+
+		<link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/aos.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+		<!-- <link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+		/> -->
+		<link rel="stylesheet" href="./css/index.min.css" />
+	</head>
+
+	<body>
+		<header class="page-header">
+			<div class="container header-nav">
+				<nav class="navigation">
+					<a href="./index.html" class="logo-link link animate__animated animate__backInLeft">
+						Web
+						<span class="logo-name">Studio</span>
+					</a>
+
+					<ul class="nav-list">
+						<li class="nav-item">
+							<a href="./index.html" class="nav-link link current">Studio</a>
+						</li>
+						<li class="nav-item">
+							<a href="./portfolio.html" class="nav-link">Portfolio</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link link">Contacts</a>
+						</li>
+					</ul>
+				</nav>
+				<button
+					class="mobile-menu-open js-open-menu"
+					data-menu-button
+					aria-expanded="false"
+					aria-controls="mobile-menu"
+					type="button"
+				>
+					<svg aria-label="Mobile menu switcher" width="32" height="22" class="burger">
+						<use class="icon-burger" xlink:href="./images/icons.svg#burger"></use>
+					</svg>
+				</button>
+				<ul class="contacts-list animate__animated animate__backInRight">
+					<li class="contacts-item">
+						<a class="contacts-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+					</li>
+					<li class="contacts-item"><a class="contacts-link link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+				</ul>
+			</div>
+		</header>
+
+		<main>
+			<!--Hero-->
+			<section class="hero">
+				<div class="container">
+					<h1 class="hero-header animate__animated animate__pulse animate__delay-1s animate__slower">
+						Effective Solutions for Your Business
+					</h1>
+					<button data-modal-open class="hero-button animate__animated animate__fadeIn animate__slower" type="button">
+						Order Service
+					</button>
+				</div>
+			</section>
+
+			<!--Section 1  FEATURE-->
+			<section class="features section">
+				<div class="container">
+					<h2 class="visually-hidden">Features</h2>
+
+					<ul class="feature-list">
+						<li class="feature-item">
+							<div class="feature-icon animate__animated animate__bounceInLeft">
+								<svg width="64" height="64" class="">
+									<use xlink:href="./images/icons.svg#antenna"></use>
+								</svg>
+							</div>
+							<h3 class="section-title" data-aos="fade-up" data-aos-once="true">Strategy</h3>
+							<p class="section-text">
+								Our goal is to identify the business problem to walk away with the perfect and creative solution.
+							</p>
+						</li>
+						<li class="feature-item">
+							<div class="feature-icon animate__animated animate__bounceInLeft">
+								<svg width="64" height="64" class="">
+									<use xlink:href="./images/icons.svg#clock"></use>
+								</svg>
+							</div>
+							<h3 class="section-title" data-aos="fade-up" data-aos-once="true">Punctuality</h3>
+							<p class="section-text">
+								Bring the key message to the brand's audience for the best price within the shortest possible time.
+							</p>
+						</li>
+						<li class="feature-item">
+							<div class="feature-icon animate__animated animate__bounceInRight">
+								<svg width="64" height="64" class="">
+									<use xlink:href="./images/icons.svg#diagram"></use>
+								</svg>
+							</div>
+							<h3 class="section-title" data-aos="fade-up" data-aos-once="true">Diligence</h3>
+							<p class="section-text">
+								Research and confirm brands that present the strongest digital growth opportunities and minimize risk.
+							</p>
+						</li>
+						<li class="feature-item">
+							<div class="feature-icon animate__animated animate__bounceInRight">
+								<svg width="64" height="64" class="">
+									<use xlink:href="./images/icons.svg#astronaut"></use>
+								</svg>
+							</div>
+							<h3 class="section-title" data-aos="fade-up" data-aos-once="true">Technologies</h3>
+							<p class="section-text">
+								Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.
+							</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<!--Section 2   WORK-->
+			<section class="work section no-padding-top">
+				<div class="container">
+					<h2 class="section-header" data-aos="fade-in" data-aos-once="true">What are we doing</h2>
+					<ul class="work-list">
+						<li class="work-item" data-aos="fade-up" data-aos-once="true">
+							<img srcset="./images/img@2x.jpg 2x" src="./images/img.jpg" alt="desktop" width="360" />
+						</li>
+						<li class="work-item" data-aos="fade-up" data-aos-once="true">
+							<img srcset="./images/img1@2x.jpg 2x" src="./images/img1.jpg" alt="mobile" width="360" />
+						</li>
+						<li class="work-item" data-aos="fade-up" data-aos-once="true">
+							<img srcset="./images/img2@2x.jpg 2x" src="./images/img2.jpg" alt="sync" width="360" />
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<!--Section 3    TEAM-->
+			<section class="team section">
+				<div class="container">
+					<h2 class="section-header" data-aos="fade-in" data-aos-once="true">Our team</h2>
+					<ul class="team-list">
+						<li class="team-item" data-aos="fade-up" data-aos-once="true">
+							<img
+								class="card-img"
+								srcset="./images/mark@2x.jpg 2x"
+								src="./images/mark.jpg"
+								alt="photo mark"
+								width="264"
+							/>
+							<div class="under-card">
+								<h3 class="section-title team-name">Mark Guerrero</h3>
+								<p class="team-position section-text">Product Designer</p>
+								<ul class="social-list">
+									<li class="social-item">
+										<a
+											href="https://instagram.com"
+											target="_blank"
+											rel="norefferer noopener nofollow"
+											class="social-link"
+										>
+											<svg width="16" height="16" class="">
+												<use xlink:href="./images/icons.svg#inst"></use>
+											</svg>
+										</a>
+									</li>
+									<li class="social-item">
+										<a
+											href="https://twitter.com"
+											target="_blank"
+											rel="norefferer noopener nofollow"
+											class="social-link"
+										>
+											<svg width="16" height="16" class="">
+												<use xlink:href="./images/icons.svg#twt"></use>
+											</svg>
+										</a>
+									</li>
+									<li class="social-item">
+										<a href="https://fb.com" target="_blank" rel="norefferer noopener nofollow" class="social-link">
+											<svg width="16" height="16" class="">
+												<use xlink:href="./images/icons.svg#fb"></use>
+											</svg>
+										</a>
+									</li>
+									<li class="social-item">
+										<a
+											href="https://linkedin.com"
+											target="_blank"
+											rel="norefferer noopener nofollow"
+											class="social-link"
+										>
+											<svg width="16" height="16" class="">
+												<use xlink:href="./images/icons.svg#in"></use>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="team-item" data-aos="fade-up" data-aos-once="true">
+							<img
+								srcset="./images/tom@2x.jpg 2x"
+								class="card-img"
+								src="./images/tom.jpg"
+								alt="photo tom"
+								width="264"
+							/>
+							<div class="under-card">
+								<h3 class="section-title team-name">Tom Ford</h3>
+								<p class="team-position section-text">Frontend Developer</p>
+								<ul class="social-list">
+									<li class="social-item">
+										<a
+											href="https://instagram.com"
+											target="_blank"
+											rel="norefferer noopener nofollow"
+											class="social-link"
+										>
+											<svg width="16" height="16" class="">
+												<use xlink:href="./images/icons.svg#inst"></use>
+											</svg>
+										</a>
+									</li>
+									<li class="social-item">
+										<a
+											href="https://twitter.com"
+											target="_blank"
+											rel="norefferer noopener nofollow"
+											class="social-link"
+										>
+											<svg width="16" height="16" class="">
+												<use xlink:href="./images/icons.svg#twt"></use>
+											</svg>
+										</a>
+									</li>
+									<li class="social-item">
+										<a href="https://fb.com" target="_blank" rel="norefferer noopener nofollow" class="social-link">
+											<svg width="16" height="16" class="">
+												<use xlink:href="./images/icons.svg#fb"></use>
+											</svg>
+										</a>
+									</li>
+									<li class="social-item">
+										<a
+											href="https://linkedin.com"
+											target="_blank"
+											rel="norefferer noopener nofollow"
+											class="social-link"
+										>
+											<svg width="16" height="16" class="">
+												<use xlink:href="./images/icons.svg#in"></use>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="team-item" data-aos="fade-up" data-aos-once="true">
+							<img
+								srcset="./images/camila@2x.jpg 2x"
+								class="card-img"
+								src="./images/camila.jpg"
+								alt="photo camila"
+								width="264"
+							/>
+							<div class="under-card">
+								<h3 class="section-title team-name">Camila Garcia</h3>
+								<p class="team-position section-text">Marketing</p>
+								<ul class="social-list">
+									<li class="social-item">
+										<a
+											href="https://instagram.com"
+											target="_blank"
+											rel="norefferer noopener nofollow"
+											class="social-link"
+										>
+											<svg width="16" height="16" class="">
+												<use xlink:href="./images/icons.svg#inst"></use>
+											</svg>
+										</a>
+									</li>
+									<li class="social-item">
+										<a
+											href="https://twitter.com"
+											target="_blank"
+											rel="norefferer noopener nofollow"
+											class="social-link"
+										>
+											<svg width="16" height="16" class="">
+												<use xlink:href="./images/icons.svg#twt"></use>
+											</svg>
+										</a>
+									</li>
+									<li class="social-item">
+										<a href="https://fb.com" target="_blank" rel="norefferer noopener nofollow" class="social-link">
+											<svg width="16" height="16" class="">
+												<use xlink:href="./images/icons.svg#fb"></use>
+											</svg>
+										</a>
+									</li>
+									<li class="social-item">
+										<a
+											href="https://linkedin.com"
+											target="_blank"
+											rel="norefferer noopener nofollow"
+											class="social-link"
+										>
+											<svg width="16" height="16" class="">
+												<use xlink:href="./images/icons.svg#in"></use>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="team-item" data-aos="fade-up" data-aos-once="true">
+							<img
+								srcset="./images/daniel@2x.jpg 2x"
+								class="card-img"
+								src="./images/daniel.jpg"
+								alt="photo daniel"
+								width="264"
+							/>
+							<div class="under-card">
+								<h3 class="section-title team-name">Daniel Wilson</h3>
+								<p class="team-position section-text">UI Designer</p>
+								<ul class="social-list">
+									<li class="social-item">
+										<a
+											href="https://instagram.com"
+											target="_blank"
+											rel="norefferer noopener nofollow"
+											class="social-link"
+										>
+											<svg width="16" height="16" class="">
+												<use xlink:href="./images/icons.svg#inst"></use>
+											</svg>
+										</a>
+									</li>
+									<li class="social-item">
+										<a
+											href="https://twitter.com"
+											target="_blank"
+											rel="norefferer noopener nofollow"
+											class="social-link"
+										>
+											<svg width="16" height="16" class="">
+												<use xlink:href="./images/icons.svg#twt"></use>
+											</svg>
+										</a>
+									</li>
+									<li class="social-item">
+										<a href="https://fb.com" target="_blank" rel="norefferer noopener nofollow" class="social-link">
+											<svg width="16" height="16" class="">
+												<use xlink:href="./images/icons.svg#fb"></use>
+											</svg>
+										</a>
+									</li>
+									<li class="social-item">
+										<a
+											href="https://linkedin.com"
+											target="_blank"
+											rel="norefferer noopener nofollow"
+											class="social-link"
+										>
+											<svg width="16" height="16" class="">
+												<use xlink:href="./images/icons.svg#in"></use>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<!--Section 4 CUSTOMERS-->
+			<section class="customers section">
+				<div class="container">
+					<h2 class="section-header" data-aos="fade-in" data-aos-once="true">Customers</h2>
+					<ul class="customers-list">
+						<li class="customers-item" data-aos="fade-up" data-aos-once="true">
+							<a class="customers-link" target="_blank" rel="norefferer noopener nofollow" href="">
+								<svg width="104" height="56">
+									<use xlink:href="./images/icons.svg#client1"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="customers-item" data-aos="fade-up" data-aos-once="true">
+							<a class="customers-link" target="_blank" rel="norefferer noopener nofollow" href="">
+								<svg class="customer-svg" width="104" height="56">
+									<use xlink:href="./images/icons.svg#client2"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="customers-item" data-aos="fade-up" data-aos-once="true">
+							<a class="customers-link" target="_blank" rel="norefferer noopener nofollow" href="">
+								<svg width="104" height="56">
+									<use xlink:href="./images/icons.svg#client3"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="customers-item" data-aos="fade-up" data-aos-once="true">
+							<a class="customers-link" target="_blank" rel="norefferer noopener nofollow" href="">
+								<svg width="104" height="56">
+									<use xlink:href="./images/icons.svg#client4"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="customers-item" data-aos="fade-up" data-aos-once="true">
+							<a class="customers-link" target="_blank" rel="norefferer noopener nofollow" href="">
+								<svg width="104" height="56">
+									<use xlink:href="./images/icons.svg#client5"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="customers-item" data-aos="fade-up" data-aos-once="true">
+							<a class="customers-link" target="_blank" rel="norefferer noopener nofollow" href="">
+								<svg width="104" height="56">
+									<use xlink:href="./images/icons.svg#client6"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</main>
+
+		<!--Footer-->
+		<footer class="footer">
+			<div class="container footer-flex">
+				<div class="footer-left">
+					<a href="./index.html" class="logo-link">
+						Web
+						<span class="logo-namef">Studio</span>
+					</a>
+					<p class="footer-text-left">
+						Increase the flow of customers and sales for your business with digital marketing & growth solutions.
+					</p>
+				</div>
+				<div class="footer-right">
+					<p class="footer-text-right">Social media</p>
+					<ul class="social-list">
+						<li class="social-item">
+							<a
+								href="https://instagram.com"
+								target="_blank"
+								rel="norefferer noopener nofollow"
+								class="social-link footer-social"
+							>
+								<svg class="social-icon" height="24" width="24">
+									<use xlink:href="./images/icons.svg#inst"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="social-item">
+							<a
+								href="https://twitter.com"
+								target="_blank"
+								rel="norefferer noopener nofollow"
+								class="social-link footer-social"
+							>
+								<svg class="social-icon" height="24" width="24">
+									<use xlink:href="./images/icons.svg#twt"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="social-item">
+							<a
+								href="https://fb.com"
+								target="_blank"
+								rel="norefferer noopener nofollow"
+								class="social-link footer-social"
+							>
+								<svg class="social-icon" height="24" width="24">
+									<use xlink:href="./images/icons.svg#fb"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="social-item">
+							<a
+								href="https://linkedin.com"
+								target="_blank"
+								rel="norefferer noopener nofollow"
+								class="social-link footer-social"
+							>
+								<svg class="social-icon" height="24" width="24">
+									<use xlink:href="./images/icons.svg#in"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<form class="footer-subscribe">
+					<label class="footer-text-right" for="email">Subscribe</label>
+					<div class="flex-form">
+						<input class="subscribe-input" id="email" type="email" name="email" placeholder="E-mail" />
+
+						<button class="subscribe-btn" type="submit">
+							Subscribe
+							<svg width="24" height="24" class="subscribe-svg">
+								<use xlink:href="./images/icons.svg#subscribe"></use>
+							</svg>
+						</button>
+					</div>
+				</form>
+			</div>
+		</footer>
+
+		<!-- Backdrop + modal -->
+		<div class="backdrop is-hidden" data-modal>
+			<div class="modal">
+				<button data-modal-close class="close-modal">
+					<svg width="8" height="8" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<use xlink:href="./images/icons.svg#close"></use>
+					</svg>
+				</button>
+				<p class="modal-header">Leave your contacts and we will call you back</p>
+				<form class="modal-form">
+					<label class="modal-form-field">
+						<span class="modal-label">Name</span>
+						<input
+							type="text"
+							class="modal-input"
+							name="user-name"
+							required
+							minlength="2"
+							pattern="^[A-Za-zА-Яа-яіІїЇ]+$"
+							title="Type your name here"
+						/>
+						<svg width="16" height="16" class="modal-icon">
+							<use xlink:href="./images/icons.svg#person"></use>
+						</svg>
+					</label>
+
+					<label class="modal-form-field">
+						<span class="modal-label">Phone</span>
+						<input
+							type="tel"
+							class="modal-input"
+							name="telephone"
+							required
+							pattern="[0-9]{10}"
+							title="Ten digits
+                phone number"
+							minlength="10"
+						/>
+						<svg width="16" height="16" class="modal-icon">
+							<use xlink:href="./images/icons.svg#phone"></use>
+						</svg>
+					</label>
+
+					<label class="modal-form-field">
+						<span class="modal-label">Email</span>
+						<input
+							type="email"
+							class="modal-input"
+							name="email"
+							required
+							pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+							title="email@mail.com"
+						/>
+						<svg width="16" height="16" class="modal-icon">
+							<use xlink:href="./images/icons.svg#email"></use>
+						</svg>
+					</label>
+
+					<label for="comment" class="modal-label">Comment</label>
+					<textarea class="modal-comment" name="comment" id="comment" placeholder="Text input"></textarea>
+
+					<label for="policy" class="modal-label-policy">
+						<input type="checkbox" class="modal-input-policy" name="policy" value="policy-agree" id="policy" />
+						<span class="checkbox-field">
+							<svg width="16" height="16" class="checkbox-icon">
+								<use xlink:href="./images/icons.svg#checkbox"></use>
+							</svg>
+						</span>
+						<span>
+							I accept the terms and conditions of the
+							<a class="form-link" href="">Privacy Policy</a>
+						</span>
+					</label>
+
+					<button type="submit" class="modal-btn">Send</button>
+				</form>
+			</div>
+		</div>
+		<!-- Mobile menu -->
+		<div class="mobile-menu js-menu-container" id="mobile-menu">
+			<div class="container mobile-menu-container">
+				<button class="close-modal mobile-close js-close-menu">
+					<svg width="8" height="8" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<use xlink:href="./images/icons.svg#close"></use>
+					</svg>
+				</button>
+				<ul class="mobile-nav">
+					<li class="mobile-nav-item">
+						<a href="./index.html" class="mobile-nav-link">Studio</a>
+					</li>
+					<li class="mobile-nav-item">
+						<a href="./portfolio.html" class="mobile-nav-link">Portfolio</a>
+					</li>
+					<li class="mobile-nav-item">
+						<a href="" class="mobile-nav-link">Contacts</a>
+					</li>
+				</ul>
+				<ul class="mobile-contacts">
+					<li class="mobile-contacts-item">
+						<a class="mobile-contacts-tel" href="tel:+110001111111">+11 (000) 111-11-11</a>
+					</li>
+					<li class="mobile-contacts-item">
+						<a class="mobile-contacts-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+					</li>
+				</ul>
+				<ul class="social-list">
+					<li class="social-item">
+						<a href="https://instagram.com" target="_blank" rel="norefferer noopener nofollow" class="social-link">
+							<svg class="social-icon" height="24" width="24">
+								<use xlink:href="./images/icons.svg#inst"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="social-item">
+						<a href="https://twitter.com" target="_blank" rel="norefferer noopener nofollow" class="social-link">
+							<svg class="social-icon" height="24" width="24">
+								<use xlink:href="./images/icons.svg#twt"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="social-item">
+						<a href="https://fb.com" target="_blank" rel="norefferer noopener nofollow" class="social-link">
+							<svg class="social-icon" height="24" width="24">
+								<use xlink:href="./images/icons.svg#fb"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="social-item">
+						<a href="https://linkedin.com" target="_blank" rel="norefferer noopener nofollow" class="social-link">
+							<svg class="social-icon" height="24" width="24">
+								<use xlink:href="./images/icons.svg#in"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- JS -->
+		<script src="./js/header-height.js"></script>
+		<script src="./js/modal.js"></script>
+		<script src="./js/mobile.js"></script>
+		<script
+			defer=""
+			src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+			integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+			crossorigin="anonymous"
+		></script>
+		<script src="./js/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
+	</body>
+</html>

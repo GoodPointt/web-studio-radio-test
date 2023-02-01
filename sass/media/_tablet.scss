@@ -1,0 +1,87 @@
+/* 768px + */
+
+@media screen and (min-width: 768px) {
+	.mobile-menu-open {
+		display: none;
+	}
+	.mobile-menu {
+		display: none;
+	}
+	.feature-list {
+		display: flex;
+	}
+	.feature-item {
+		width: calc((100% - 1 * 24px) / 2);
+	}
+
+	.container {
+		width: 768px;
+	}
+	.modal {
+		width: 408px;
+	}
+	.team-list {
+		display: flex;
+	}
+	.customers-list {
+		display: flex;
+		flex-wrap: wrap;
+		column-gap: 24px;
+		row-gap: 72px;
+		justify-content: center;
+	}
+	.customers-item {
+		flex-basis: 168px;
+	}
+	.footer-flex {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.footer-left {
+		margin-right: 24px;
+	}
+	.flex-form {
+		display: flex;
+		gap: 24px;
+		margin-top: 16px;
+	}
+	.contacts-list {
+		display: block;
+		margin-left: auto;
+	}
+	.card-list {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.filter-list {
+		justify-content: center;
+	}
+	.hero-header {
+		min-width: 500px;
+		font-size: 56px;
+		line-height: 1.07;
+		margin-bottom: 40px;
+	}
+	.subscribe-input {
+		width: 264px;
+	}
+}
+
+/* 768px - 1199px */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+	.filter-list {
+		margin-bottom: 64px;
+	}
+	.container.footer-flex {
+		width: 535px;
+	}
+	.card-item {
+		width: 356px;
+		height: 450px;
+		margin-right: 12px;
+		margin-bottom: 72px;
+	}
+	.portfolio {
+		margin-bottom: 0px;
+	}
+}

@@ -1,0 +1,238 @@
+/* 0 - 1199px */
+@media screen and (max-width: 1199px) {
+	.hero {
+		background-image: linear-gradient(to right, #2e2f42b3, #2e2f42b3), url(../images/dark-bg-tablet.jpg);
+	}
+	.section-title {
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 1.111;
+	}
+	.work {
+		display: none;
+	}
+	.feature-icon {
+		display: none;
+	}
+	.feature-list {
+		flex-wrap: wrap;
+		column-gap: 24px;
+		row-gap: 72px;
+	}
+	.footer-text-left {
+		margin-bottom: 72px;
+	}
+	.footer-right .social-list {
+		margin-bottom: 72px;
+	}
+	.team-list {
+		flex-wrap: wrap;
+		row-gap: 64px;
+		column-gap: 24px;
+		justify-content: center;
+	}
+
+	.subscribe-input {
+		margin-bottom: 16px;
+	}
+
+	.contacts-link {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.card-list {
+		column-gap: 24px;
+	}
+	.card-item {
+		flex-basis: calc((100% - 24px) / 2);
+	}
+}
+
+/* 0 - 767px */
+@media screen and (max-width: 767px) {
+	.hero {
+		background-image: linear-gradient(to right, #2e2f42b3, #2e2f42b3), url(../images/dark-bg-mobile.jpg);
+	}
+
+	.modal {
+		width: 95%;
+		max-width: 392px;
+		height: 95%;
+		max-height: 586px;
+		overflow: scroll;
+	}
+
+	.mobile-menu {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background-color: #fff;
+		z-index: 100;
+		transform: translateX(100%) scale(0.1);
+
+		transition: transform var(--o-animation), opacity var(--o-animation), visibility var(--o-animation);
+		transform-origin: top right;
+
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
+
+		&.is-open {
+			transform: translateX(0) scale(1);
+			opacity: 1;
+			visibility: visible;
+			pointer-events: auto;
+		}
+	}
+
+	.mobile-menu-container {
+		height: 100%;
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+	}
+	.container.mobile-menu-container {
+		padding: 40px;
+		position: relative;
+	}
+	.mobile-menu .close-modal {
+		right: 40px;
+		top: 40px;
+	}
+	.mobile-nav-item {
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 1.111;
+		letter-spacing: 0.02em;
+		margin-top: 40px;
+
+		&:nth-child(3) {
+			color: var(--btn-hover-color);
+		}
+	}
+
+	.mobile-contacts {
+		margin-top: auto;
+	}
+	.mobile-contacts-tel {
+		font-weight: 600;
+		font-size: 36px;
+		line-height: 1.111;
+		text-transform: capitalize;
+		color: var(--accent-color);
+	}
+	.mobile-contacts-mail {
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 1.2;
+		letter-spacing: 0.02em;
+		color: var(--primary-text-color);
+	}
+	.mobile-contacts .mobile-contacts-item + .mobile-contacts-item {
+		margin-top: 40px;
+	}
+
+	.mobile-menu .social-list {
+		margin-top: 48px;
+		justify-content: space-between;
+	}
+	.nav-list {
+		display: none;
+	}
+
+	.navigation .logo-link {
+		padding: 23px 0px;
+	}
+	.contacts-list {
+		display: none;
+	}
+	.mobile-menu-open {
+		margin-left: auto;
+		background-color: transparent;
+		padding: 0;
+		height: 22px;
+		transition: fill var(--o-animation);
+
+		&:hover,
+		&:focus {
+			fill: var(--btn-hover-color);
+		}
+	}
+
+	.feature-item {
+		text-align: center;
+
+		&:not(:last-child) {
+			margin-bottom: 72px;
+		}
+	}
+
+	.team-item {
+		margin-left: auto;
+		margin-right: auto;
+		width: 264px;
+
+		&:not(:last-child) {
+			margin-bottom: 72px;
+		}
+	}
+
+	.customers-list {
+		display: flex;
+		flex-wrap: wrap;
+		row-gap: 72px;
+		column-gap: 16px;
+		justify-content: center;
+	}
+	.customers-item {
+		flex-basis: calc((100% - 1 * 16px) / 2);
+		max-width: 190px;
+	}
+	.footer {
+		text-align: center;
+	}
+	.footer-text-left {
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 72px;
+	}
+	.footer-right .social-list {
+		justify-content: center;
+	}
+	.subscribe-input {
+		width: 90%;
+		max-width: 396px;
+	}
+	.subscribe-btn {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.card-item {
+		max-width: 396px;
+		// height: auto;
+
+		&:not(:last-child) {
+			margin-bottom: 48px;
+		}
+	}
+
+	.filter-list {
+		flex-wrap: wrap;
+		justify-content: left;
+		margin-bottom: 48px;
+	}
+	.section.portfolio {
+		padding-top: 48px;
+		padding-bottom: 48px;
+	}
+}
+
+/* 480px + */
+@media screen and (min-width: 480px) {
+	.container {
+		width: 428px;
+	}
+}

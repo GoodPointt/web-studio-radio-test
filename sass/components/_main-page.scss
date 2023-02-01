@@ -1,0 +1,140 @@
+body {
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	letter-spacing: 0.02em;
+	color: var(--primary-text-color);
+	background-color: var(--bg-color);
+}
+
+.section {
+	padding-top: 96px;
+	padding-bottom: 96px;
+}
+.section.no-padding-top {
+	padding-top: 0;
+}
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+/*======================= MAIN-CONTENT ==========================*/
+
+.section-title {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 1.2;
+	letter-spacing: 0.02em;
+	color: var(--title-text-color);
+
+	margin-bottom: 8px;
+}
+
+.section-text {
+	line-height: 1.5;
+}
+
+.section-header {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.11;
+	letter-spacing: 0.02em;
+	text-align: center;
+	text-transform: capitalize;
+	color: var(--title-text-color);
+
+	margin-bottom: 72px;
+}
+
+/*======================== FEATURE ========================*/
+
+.feature-item {
+	display: block;
+}
+.feature-item .section-text {
+	padding-bottom: 0;
+}
+
+/*======================= WORK ==========================*/
+
+/*=========================== TEAM ===========================*/
+
+.team {
+	background-color: var(--secondary-color);
+}
+
+.team-item {
+	background-color: var(--background-color);
+	text-align: center;
+	background: var(--bg-color);
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+	border-radius: 0px 0px 4px 4px;
+}
+
+.under-card {
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+
+.section-text.team-position {
+	margin-bottom: 12px;
+}
+
+.social-list {
+	display: flex;
+	gap: 24px;
+}
+.under-card .social-list {
+	justify-content: center;
+}
+.social-link {
+	@extend %centeredFlex;
+	height: 40px;
+	width: 40px;
+
+	border-radius: 50%;
+	background-color: var(--accent-color);
+
+	transition: background-color var(--o-animation);
+	&:hover,
+	&:focus {
+		background-color: var(--btn-hover-color);
+	}
+}
+
+/*================== CUSTOMERS ==================*/
+
+.customers-link {
+	@extend %centeredFlex;
+
+	height: 88px;
+
+	border: 1px solid #8e8f99;
+	border-radius: 4px;
+
+	fill: #8e8f99;
+
+	transition: fill var(--o-animation), border-color var(--o-animation);
+	&:hover,
+	&:focus {
+		fill: var(--accent-color);
+		border-color: var(--accent-color);
+	}
+}

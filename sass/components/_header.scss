@@ -1,0 +1,113 @@
+/*===================== LOGO ===========================*/
+.logo-link {
+	display: inline-flex;
+	font-family: "Raleway";
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 1.33;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: var(--accent-color);
+}
+.logo-name {
+	color: var(--title-text-color);
+}
+
+/*======================= HEADER =======================*/
+.page-header {
+	box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+	background-color: var(--bg-color);
+
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 2;
+}
+
+/*===================== NAVIGATION ======================*/
+.header-nav,
+.navigation {
+	display: flex;
+	align-items: center;
+}
+
+.nav-list {
+	display: flex;
+	margin-left: 77px;
+}
+
+.nav-list .nav-item:not(:last-child) {
+	margin-right: 40px;
+}
+
+.nav-link {
+	font-size: 16px;
+	line-height: 0.66;
+	letter-spacing: 0.02em;
+	font-weight: 700;
+	color: var(--title-text-color);
+	padding-top: 31px;
+	padding-bottom: 31px;
+	display: block;
+
+	transition: color var(--o-animation);
+
+	&:hover,
+	&:focus {
+		color: var(--accent-color);
+	}
+	&:active {
+		color: var(--btn-hover-color);
+	}
+}
+
+.mobile-nav-link:hover,
+.mobile-nav-link:focus {
+	color: var(--accent-color);
+}
+
+.mobile-nav-link:active,
+.mobile-contacts-mail:hover,
+.mobile-contacts-mail:focus,
+.mobile-contacts-mail:active,
+.mobile-contacts-tel:hover,
+.mobile-contacts-tel:focus,
+.mobile-contacts-tel:active {
+	color: var(--btn-hover-color);
+}
+
+.current {
+	color: var(--btn-hover-color);
+	position: relative;
+
+	&::after {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+
+		content: "";
+		display: block;
+		width: 100%;
+		height: 4px;
+		border-radius: 2px;
+		background-color: var(--btn-hover-color);
+	}
+}
+
+.contacts-link {
+	font-size: 16px;
+	line-height: 0.66;
+	letter-spacing: 0.02em;
+	color: var(--primary-text-color);
+
+	display: block;
+
+	transition: color var(--o-animation);
+
+	&:hover,
+	&:focus {
+		color: var(--accent-color);
+	}
+}
